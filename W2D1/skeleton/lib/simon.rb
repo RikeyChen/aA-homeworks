@@ -49,7 +49,7 @@ class Simon
   end
 
   def game_over_message
-
+    puts "Wrong sequence! Game over!"
   end
 
   def reset_game
