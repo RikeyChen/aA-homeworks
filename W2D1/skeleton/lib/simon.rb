@@ -20,8 +20,11 @@ class Simon
   def take_turn
     show_sequence
     require_sequence
-    round_success_message # come back to this
-    @sequence_length += 1
+
+    if @game_over == false
+      round_success_message
+      @sequence_length += 1
+    end
   end
 
   def show_sequence
@@ -42,7 +45,7 @@ class Simon
   end
 
   def round_success_message
-
+    puts "You passed the round!"
   end
 
   def game_over_message
