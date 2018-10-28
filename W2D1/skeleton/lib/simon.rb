@@ -29,6 +29,15 @@ class Simon
 
   def show_sequence
     add_random_color
+    puts "Here is the sequence"
+    sleep(3)
+    @seq.each do |color|
+      puts color
+      sleep(2)
+      system("clear")
+      sleep(1)
+    end
+    system("clear")
   end
 
   def require_sequence
@@ -57,4 +66,9 @@ class Simon
     @game_over = false
     @seq = []
   end
+end
+
+if __FILE__ == $PROGRAM_NAME
+  game = Simon.new
+  game.play
 end
