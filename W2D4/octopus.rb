@@ -57,3 +57,12 @@ def clever_octopus_search(fishes)
   end
   longest
 end
+
+# Dancing Octopus
+
+def slow_dance(direction, tiles)
+  tiles.each_index do |tile_idx|
+    return tile_idx if tiles[tile_idx] == direction
+  end
+  nil
+end
