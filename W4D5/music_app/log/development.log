@@ -4824,3 +4824,12 @@ Processing by UsersController#create as HTML
 Completed 200 OK in 193ms (Views: 38.7ms | ActiveRecord: 23.2ms)
 
 
+Started GET "/users/new" for 127.0.0.1 at 2018-11-15 21:21:07 -0800
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Rikey/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 724ms (Views: 713.6ms | ActiveRecord: 0.0ms)
+
+
